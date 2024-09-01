@@ -27,13 +27,15 @@ function Steps() {
       </button>
       {isOpen && (
         <div className="steps">
+          <h1 className="header">ثلاثة خطوات لتحقيق النجاح</h1>
+
           <div className="numbers">
             <div className={step >= 1 ? "active" : ""}>1</div>
             <div className={step >= 2 ? "active" : ""}>2</div>
             <div className={step >= 3 ? "active" : ""}>3</div>
           </div>
           <p className="message">
-            Step {step}: {messages[step - 1]}
+            خطوة رقم {step}: {messages[step - 1]}
           </p>
           <div className="buttons">
             <button
@@ -125,8 +127,4 @@ function Counter() {
   );
 }
 
-const messages = [
-  "Learn React ⚛️",
-  "Apply for jobs 💼",
-  "Invest your new income 🤑",
-];
+const messages = ["استعن بالله", "شد حيلك", "حاول حتى لو زهقن"];
